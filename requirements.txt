@@ -1,0 +1,4 @@
+django==1.8.1
+-e git://github.com/montylounge/django-psi.git#egg=django-psi
+dj_database_url
+psycopg2

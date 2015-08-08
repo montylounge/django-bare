@@ -4,7 +4,7 @@
 
 A simple, bare minimum Django project template for getting a Django project started. 
 
-The idea came from the desire to simply test reusable apps.
+The idea came from the desire to easily install and play with various reusable apps.
 
 This project installs Django's flatpages, sites, and authentication apps so the admin is setup quickly.
 

@@ -15,7 +15,7 @@ This project assumes you've created, and activated, a project virtualenv for ins
 
 First run the below command to create your project.
 
-`django-admin startproject --template=https://github.com/montylounge/django-bare/archive/master.zip YOUR_PROJECTNAME DESTINATION_DIRECTORY`
+> `django-admin startproject --template=https://github.com/montylounge/django-bare/archive/master.zip YOUR_PROJECTNAME DESTINATION_DIRECTORY`
 
 Example commands to get started:
 
@@ -37,7 +37,7 @@ Once you've setup your database then you can continue...
 
 > 'python manage.py runserver'
 
-... and you should see the Django server run.
+...and you should see the Django server run.
 
 
 # Dependencies

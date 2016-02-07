@@ -11,7 +11,7 @@ This project installs Django's flatpages, sites, and authentication apps so the 
 
 # Usage
 
-This project assumes you've created, and activated, a project virtualenv for installing project dependencies. To use the `django-admin` command below you need Django installed. This project is using Django==1.8.3.
+This project assumes you've created, and activated, a project virtualenv for installing project dependencies. To use the `django-admin` command below you need Django installed. This project is using Django==1.9.2
 
 First run the below command to create your project.
 

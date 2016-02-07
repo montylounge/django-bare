@@ -2,7 +2,7 @@
 
 # Overview
 
-A simple, bare minimum Django project template for getting a Django project started. 
+A simple, bare minimum Django project template for getting a Django project started.
 
 The idea came from the desire to easily install and play with various reusable apps.
 
@@ -31,20 +31,18 @@ At this point you need to create a local database for your app. This template as
 
 Once you've setup your database then you can continue...
 
-> 'python manage.py syncdb'
+> 'python manage.py migrate'
 
-> 'python manage.py migrate' 
 
 > 'python manage.py runserver'
 
 ...and you should see the Django server run.
 
+If you want to check out the Django admin you first need to create a super user. From the [Django docs](https://docs.djangoproject.com/en/1.9/topics/auth/default/#creating-superusers):
+
+> 'python manage.py createsuperuser --username=joe --email=joe@example.com'
+
 
 # Dependencies
 
 I use dj_database_url for connecting to the project's database (normally Postgres) which means I also require psycopg2.
-
-
-
-
-

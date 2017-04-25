@@ -1,0 +1,138 @@
+{
+  "name": "montylounge/django-bare",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "master",
+  "style": {
+    "name": "Default",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "-apple-system, BlinkMacSystemFont, sans-serif",
+    "fontWeight": 400,
+    "bold": 600,
+    "lineHeight": 1.5,
+    "typeScale": [
+      72,
+      48,
+      24,
+      20,
+      16,
+      14,
+      12
+    ],
+    "monospace": "Menlo, monospace",
+    "heading": {
+      "fontFamily": null,
+      "fontStyle": null,
+      "fontWeight": 600,
+      "lineHeight": 1.25,
+      "textTransform": null,
+      "letterSpacing": null
+    },
+    "h0": {},
+    "h1": {},
+    "h2": {},
+    "h3": {},
+    "h4": {},
+    "h5": {},
+    "h6": {},
+    "alternativeText": {},
+    "space": [
+      0,
+      8,
+      16,
+      32,
+      48,
+      64,
+      96
+    ],
+    "layout": {
+      "maxWidth": 1024,
+      "centered": false
+    },
+    "colors": {
+      "text": "#111",
+      "background": "#fff",
+      "primary": "#08e",
+      "secondary": "#059",
+      "highlight": "#e08",
+      "border": "#ddd",
+      "muted": "#eee"
+    },
+    "border": {
+      "width": 1,
+      "radius": 2
+    },
+    "link": {},
+    "button": {
+      "hover": {
+        "boxShadow": "inset 0 0 0 999px rgba(0, 0, 0, .125)"
+      }
+    },
+    "input": {},
+    "body": {
+      "margin": 0
+    },
+    "breakpoints": {
+      "xs": "@media screen and (max-width:40em)",
+      "sm": "@media screen and (min-width:40em)",
+      "md": "@media screen and (min-width:52em)",
+      "lg": "@media screen and (min-width:64em)"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/montylounge/django-bare",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "django-bare",
+      "subhead": "A simple, bare minimum Django project template for getting a Django project started.",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "django-bare: A simple, bare minimum Django project template for getting a Django project started.",
+          "url": ""
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "montylounge",
+          "repo": "django-bare"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>Overview</h1>\n\n<p>The idea came from the desire to easily install and play with various reusable apps.</p>\n<p>This project installs Django&apos;s flatpages, sites, and authentication apps so the admin is setup quickly.</p>\n<h1>Usage</h1>\n<p>This project assumes you&apos;ve created, and activated, a project virtualenv for installing project dependencies. To use the <code>django-admin</code> command below you need Django installed. This project is using Django==1.9.2</p>\n<p>First run the below command to create your project.</p>\n<blockquote>\n<p><code>django-admin startproject --template=https://github.com/montylounge/django-bare/archive/master.zip YOUR_PROJECTNAME DESTINATION_DIRECTORY</code></p>\n</blockquote>\n<p>Example commands to get started:</p>\n<blockquote>\n<p>&apos;mkdir src&apos;</p>\n<p><code>django-admin startproject --template=https://github.com/montylounge/django-bare/archive/master.zip helloworld src</code></p>\n<p><code>cd src</code></p>\n<p><code>pip install -r requirements.txt</code></p>\n</blockquote>\n<p>At this point you need to create a local database for your app. This template assumes you are naming the database the same as your project.</p>\n<p>Once you&apos;ve setup your database then you can continue...</p>\n<blockquote>\n<p>&apos;python manage.py migrate&apos;</p>\n<p>&apos;python manage.py runserver&apos;</p>\n</blockquote>\n<p>...and you should see the Django server run.</p>\n<p>If you want to check out the Django admin you first need to create a super user. From the <a href=\"https://docs.djangoproject.com/en/1.9/topics/auth/default/#creating-superusers\">Django docs</a>:</p>\n<blockquote>\n<p>&apos;python manage.py createsuperuser --username=joe --email=joe@example.com&apos;</p>\n</blockquote>\n<h1>Dependencies</h1>\n<p>I use dj_database_url for connecting to the project&apos;s database (normally Postgres) which means I also require psycopg2.</p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/montylounge/django-bare",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/montylounge",
+          "text": "montylounge"
+        }
+      ]
+    }
+  ]
+}
